@@ -1,0 +1,22 @@
+DATASET:
+  dataset_to_use: 'deap'
+  deap_dataset_path: '/Users/riccardo/Documents/datasets/DEAP/deap_preprocessed_standardized2/'
+
+MODEL:
+  model: 'cnn'
+  dropout_probs: [0.25, 0.15, 0.5, 0.25]
+
+TRAIN:
+  seed: 12
+
+  classification_of: 'valence'
+
+  train_test_split: [1180, 100]
+
+  batch_size: 50
+  num_epochs: 250
+  lr: 0.001
+  momentum: 0.9
+
+EXPORT:
+  model_path: '/Users/riccardo/uni/ac/project/report/models'

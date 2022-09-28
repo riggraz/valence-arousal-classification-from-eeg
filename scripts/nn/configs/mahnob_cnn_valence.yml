@@ -1,0 +1,22 @@
+DATASET:
+  dataset_to_use: 'mahnob'
+  mahnob_dataset_path: '/Users/riccardo/Documents/datasets/MAHNOB/mahnob_preprocessed_standardized2_referenced_128hz/'
+
+MODEL:
+  model: 'cnn'
+  dropout_probs: [0.1, 0.05, 0.25, 0.25]
+
+TRAIN:
+  seed: 12
+
+  classification_of: 'valence'
+
+  train_test_split: [460, 86]
+
+  batch_size: 40
+  num_epochs: 150
+  lr: 0.001
+  momentum: 0.9
+
+EXPORT:
+  model_path: '/Users/riccardo/uni/ac/project/report/models'

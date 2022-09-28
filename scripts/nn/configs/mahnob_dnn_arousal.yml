@@ -1,0 +1,23 @@
+DATASET:
+  dataset_to_use: 'mahnob'
+  mahnob_dataset_path: '/Users/riccardo/Documents/datasets/MAHNOB/mahnob_preprocessed_standardized2_referenced_128hz/'
+
+MODEL:
+  model: 'dnn'
+  sizes: [5000, 500, 1000]
+  dropout_probs: [0.25, 0.5]
+
+TRAIN:
+  seed: 12
+
+  classification_of: 'arousal'
+
+  train_test_split: [460, 86]
+
+  batch_size: 40
+  num_epochs: 150
+  lr: 0.001
+  momentum: 0.0
+
+EXPORT:
+  model_path: '/Users/riccardo/uni/ac/project/report/models'

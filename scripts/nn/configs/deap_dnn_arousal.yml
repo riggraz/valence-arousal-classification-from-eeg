@@ -1,0 +1,23 @@
+DATASET:
+  dataset_to_use: 'deap'
+  deap_dataset_path: '/Users/riccardo/Documents/datasets/DEAP/deap_preprocessed_standardized2/'
+
+MODEL:
+  model: 'dnn'
+  sizes: [5000, 500, 1000]
+  dropout_probs: [0.25, 0.5]
+
+TRAIN:
+  seed: 12
+
+  classification_of: 'arousal'
+
+  train_test_split: [1180, 100]
+
+  batch_size: 310
+  num_epochs: 250
+  lr: 0.0001
+  momentum: 0.0
+
+EXPORT:
+  model_path: '/Users/riccardo/uni/ac/project/report/models'
